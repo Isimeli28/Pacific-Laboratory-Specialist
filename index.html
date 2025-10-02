@@ -4,49 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pacific Laboratory Specialist</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+  <style>
+    body {margin: 0; font-family: Arial, sans-serif; line-height: 1.6;}
+    header {background: #004d66; color: #fff; padding: 15px 0;}
+    header .container {display: flex; justify-content: space-between; align-items: center; width: 90%; margin: auto;}
+    header h1 {margin: 0;}
+    nav a {color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold;}
+    nav a:hover {text-decoration: underline;}
 
-  <!-- Header -->
-  <header class="bg-blue-900 text-white p-6">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Pacific Laboratory Specialist</h1>
+    /* Slider */
+    .slider {position: relative; overflow: hidden; height: 400px;}
+    .slides {display: flex; width: 300%; transition: transform 1s ease;}
+    .slides img {width: 100%; height: 400px; object-fit: cover;}
+    .slider-btn {position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; padding: 10px; cursor: pointer;}
+    .prev {left: 10px;} .next {right: 10px;}
+
+    /* Services */
+    .services {padding: 40px 20px; background: #f9f9f9;}
+    .services h2 {text-align: center; margin-bottom: 20px;}
+    .services table {width: 80%; margin: auto; border-collapse: collapse;}
+    .services th, .services td {border: 1px solid #ddd; padding: 12px; text-align: left;}
+    .services th {background: #004d66; color: #fff;}
+
+    /* Appointment Form */
+    .appointment {padding: 40px 20px;}
+    .appointment h2 {text-align: center; margin-bottom: 20px;}
+    .appointment form {width: 60%; margin: auto; display: flex; flex-direction: column;}
+    .appointment input, .appointment select, .appointment textarea {margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px;}
+    .appointment button {padding: 12px; background: #004d66; color: #fff; border: none; cursor: pointer;}
+    .appointment button:hover {background: #006080;}
+
+    /* Footer */
+    footer {background: #004d66; color: #fff; text-align: center; padding: 20px; margin-top: 30px;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Pacific Laboratory Specialist</h1>
       <nav>
-        <a href="index.html" class="px-4 hover:underline">Home</a>
-        <a href="tests.html" class="px-4 hover:underline">Tests & Prices</a>
-        <a href="appointment.html" class="px-4 hover:underline">Book Appointment</a>
-        <a href="contact.html" class="px-4 hover:underline">Contact</a>
+        <a href="#">Home</a>
+        <a href="#services">Tests & Prices</a>
+        <a href="#appointment">Book Appointment</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main content wrapper -->
-  <main class="flex-grow">
-    <!-- Hero -->
-    <section class="bg-blue-100 text-center py-16">
-      <h2 class="text-4xl font-bold text-blue-900">Accurate. Reliable. Fast.</h2>
-      <p class="mt-4 text-lg">Your trusted diagnostic partner in the Pacific.</p>
-      <a href="appointment.html" class="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-800">
-        Book Appointment
-      </a>
-    </section>
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t39.30808-6/546375866_122135793524868645_8575231142681045107_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=5exMN9Ykwv8Q7kNvwGgXjEP&_nc_oc=Adn4b6PjBvpncVP2MO8ZoNaksTR4OFyBVH3YuL6uF6q0-3PJfj6ov3ZoojMvoxE_gFs&_nc_zt=23&_nc_ht=scontent-syd2-1.xx&_nc_gid=426CGn_8fYeuqXCgcSCGFg&oh=00_Afb_BsugjDlWeQhHvaF2vCTdguOCnEplMxwpfCbWcwHS-A&oe=68E410C6" alt="Lab Image 1">
+      <img src="https://via.placeholder.com/1200x400/004d66/ffffff?text=Medical+Testing+Services" alt="Lab Image 2">
+      <img src="https://via.placeholder.com/1200x400/007399/ffffff?text=Trusted+Healthcare+Partner" alt="Lab Image 3">
+    </div>
+    <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+    <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+  </div>
 
-    <!-- About -->
-    <section class="container mx-auto py-12 px-6">
-      <h3 class="text-2xl font-semibold text-blue-900 mb-4">About Us</h3>
-      <p class="text-gray-700 leading-relaxed">
-        Pacific Laboratory Specialist provides world-class diagnostic services with
-        cutting-edge technology, ensuring accurate results and patient-centered care.
-      </p>
-    </section>
-  </main>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Tests & Prices</h2>
+    <table>
+      <tr>
+        <th>Test Type</th>
+        <th>Price (FJD)</th>
+      </tr>
+      <tr>
+        <td>COVID-19 PCR Test</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Blood Sugar Test</td>
+        <td>$30</td>
+      </tr>
+      <tr>
+        <td>Cholesterol Test</td>
+        <td>$40</td>
+      </tr>
+      <tr>
+        <td>Full Blood Count</td>
+        <td>$60</td>
+      </tr>
+      <tr>
+        <td>HIV Test</td>
+        <td>$50</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Appointment Form -->
+  <section class="appointment" id="appointment">
+    <h2>Book an Appointment</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Test Type</option>
+        <option>COVID-19 PCR Test</option>
+        <option>Blood Sugar Test</option>
+        <option>Cholesterol Test</option>
+        <option>Full Blood Count</option>
+        <option>HIV Test</option>
+      </select>
+      <input type="date" required>
+      <textarea rows="4" placeholder="Additional Notes"></textarea>
+      <button type="submit">Submit Appointment</button>
+    </form>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-center py-6 mt-auto">
-    <p>&copy; 2025 Pacific Laboratory Specialist. All rights reserved.</p>
+  <footer id="contact">
+    <p>&copy; 2025 Pacific Laboratory Specialist | Suva, Fiji | Phone: (679) 123-4567</p>
   </footer>
+
+  <script>
+    let index = 0;
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+
+    function showSlide(i) {
+      if (i >= totalSlides) index = 0;
+      if (i < 0) index = totalSlides - 1;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+    }
+    function nextSlide() { index++; showSlide(index); }
+    function prevSlide() { index--; showSlide(index); }
+    setInterval(nextSlide, 4000); // auto slide
+  </script>
 
 </body>
 </html>
