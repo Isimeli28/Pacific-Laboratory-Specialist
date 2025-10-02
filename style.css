@@ -19,6 +19,23 @@ nav a:hover, nav .active {text-decoration: underline;}
 .services th, .services td {border: 1px solid #ddd; padding: 12px; text-align: left;}
 .services th {background: #004d66; color: #fff;}
 
+.book-btn {
+  background: #1877f2; /* Facebook blue */
+  color: #fff;
+  padding: 8px 14px;
+  margin-left: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.book-btn:hover {
+  background: #145dbf;
+}
+
+
+
+
 /* Forms */
 form {width: 60%; margin: auto; display: flex; flex-direction: column;}
 input, select, textarea {margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px;}
