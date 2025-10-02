@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Pacific Laboratory Specialist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Pacific Laboratory Specialist</h1>
+      <nav>
+        <a href="index.html" class="px-4 hover:underline">Home</a>
+        <a href="tests.html" class="px-4 hover:underline">Tests & Prices</a>
+        <a href="appointment.html" class="px-4 hover:underline">Book Appointment</a>
+        <a href="contact.html" class="px-4 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Appointment Form -->
+  <section class="container mx-auto max-w-2xl py-12 px-6">
+    <h3 class="text-2xl font-semibold text-blue-900 mb-6 text-center">Book an Appointment</h3>
+    <form class="bg-white p-8 rounded-lg shadow space-y-4">
+      <input type="text" placeholder="Full Name" class="w-full border p-3 rounded" required>
+      <input type="email" placeholder="Email" class="w-full border p-3 rounded" required>
+      <input type="tel" placeholder="Phone Number" class="w-full border p-3 rounded" required>
+      <select class="w-full border p-3 rounded" required>
+        <option value="">-- Select a Test --</option>
+        <option>Blood Test - $45</option>
+        <option>COVID-19 PCR - $120</option>
+        <option>Allergy Screening - $85</option>
+      </select>
+      <input type="date" class="w-full border p-3 rounded" required>
+      <input type="time" class="w-full border p-3 rounded" required>
+      <button type="button" class="w-full bg-blue-900 text-white py-3 rounded hover:bg-blue-800">
+        Confirm Appointment
+      </button>
+    </form>
+    <p class="mt-4 text-sm text-gray-500 text-center">⚠ This is a demo. No booking will be submitted.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 Pacific Laboratory Specialist. All rights reserved.</p>
+  </footer>
+</body>
+</html>
