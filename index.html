@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pacific Laboratory Specialist</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -13,9 +14,10 @@
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">Pacific Laboratory Specialist</h1>
       <nav>
-        <a href="#tests" class="px-4 hover:underline">Tests & Prices</a>
-        <a href="#appointment" class="px-4 hover:underline">Book Appointment</a>
-        <a href="#contact" class="px-4 hover:underline">Contact</a>
+        <a href="index.html" class="px-4 hover:underline">Home</a>
+        <a href="tests.html" class="px-4 hover:underline">Tests & Prices</a>
+        <a href="appointment.html" class="px-4 hover:underline">Book Appointment</a>
+        <a href="contact.html" class="px-4 hover:underline">Contact</a>
       </nav>
     </div>
   </header>
@@ -24,7 +26,7 @@
   <section class="bg-blue-100 text-center py-16">
     <h2 class="text-4xl font-bold text-blue-900">Accurate. Reliable. Fast.</h2>
     <p class="mt-4 text-lg">Your trusted diagnostic partner in the Pacific.</p>
-    <a href="#appointment" class="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-800">
+    <a href="appointment.html" class="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-800">
       Book Appointment
     </a>
   </section>
@@ -36,83 +38,6 @@
       Pacific Laboratory Specialist provides world-class diagnostic services with
       cutting-edge technology, ensuring accurate results and patient-centered care.
     </p>
-  </section>
-
-  <!-- Test Types & Prices -->
-  <section id="tests" class="bg-white py-12 px-6">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-semibold text-blue-900 mb-6">Test Types & Prices</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-6 border rounded-lg shadow hover:shadow-lg">
-          <h4 class="text-xl font-bold">Blood Test</h4>
-          <p class="text-gray-600 mt-2">Comprehensive blood panel for overall health check.</p>
-          <p class="mt-4 text-blue-900 font-semibold">From $45</p>
-        </div>
-        <div class="p-6 border rounded-lg shadow hover:shadow-lg">
-          <h4 class="text-xl font-bold">COVID-19 PCR</h4>
-          <p class="text-gray-600 mt-2">Gold-standard diagnostic test for COVID-19 detection.</p>
-          <p class="mt-4 text-blue-900 font-semibold">From $120</p>
-        </div>
-        <div class="p-6 border rounded-lg shadow hover:shadow-lg">
-          <h4 class="text-xl font-bold">Allergy Screening</h4>
-          <p class="text-gray-600 mt-2">Identify common allergens quickly and accurately.</p>
-          <p class="mt-4 text-blue-900 font-semibold">From $85</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Appointment Form -->
-  <section id="appointment" class="bg-blue-50 py-12 px-6">
-    <div class="container mx-auto max-w-2xl">
-      <h3 class="text-2xl font-semibold text-blue-900 mb-6 text-center">Book an Appointment</h3>
-      <form class="bg-white p-8 rounded-lg shadow space-y-4">
-        <div>
-          <label class="block font-medium">Full Name</label>
-          <input type="text" class="w-full border p-3 rounded" placeholder="Your name" required>
-        </div>
-        <div>
-          <label class="block font-medium">Email</label>
-          <input type="email" class="w-full border p-3 rounded" placeholder="you@example.com" required>
-        </div>
-        <div>
-          <label class="block font-medium">Phone Number</label>
-          <input type="tel" class="w-full border p-3 rounded" placeholder="+679 1234567" required>
-        </div>
-        <div>
-          <label class="block font-medium">Select Test</label>
-          <select class="w-full border p-3 rounded" required>
-            <option value="">-- Choose a test --</option>
-            <option>Blood Test - $45</option>
-            <option>COVID-19 PCR - $120</option>
-            <option>Allergy Screening - $85</option>
-          </select>
-        </div>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div>
-            <label class="block font-medium">Preferred Date</label>
-            <input type="date" class="w-full border p-3 rounded" required>
-          </div>
-          <div>
-            <label class="block font-medium">Preferred Time</label>
-            <input type="time" class="w-full border p-3 rounded" required>
-          </div>
-        </div>
-        <button type="submit" class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800">
-          Confirm Appointment
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-12 px-6">
-    <div class="container mx-auto text-center">
-      <h3 class="text-2xl font-semibold text-blue-900 mb-4">Contact Us</h3>
-      <p>Email: info@pacificlabs.com</p>
-      <p>Phone: +679 9876543</p>
-      <p>Address: 123 Lab Street, Raiwai, Suva, Fiji</p>
-    </div>
   </section>
 
   <!-- Footer -->
