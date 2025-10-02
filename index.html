@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
   <!-- Header -->
   <header class="bg-blue-900 text-white p-6">
@@ -22,26 +22,29 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-blue-100 text-center py-16">
-    <h2 class="text-4xl font-bold text-blue-900">Accurate. Reliable. Fast.</h2>
-    <p class="mt-4 text-lg">Your trusted diagnostic partner in the Pacific.</p>
-    <a href="appointment.html" class="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-800">
-      Book Appointment
-    </a>
-  </section>
+  <!-- Main content wrapper -->
+  <main class="flex-grow">
+    <!-- Hero -->
+    <section class="bg-blue-100 text-center py-16">
+      <h2 class="text-4xl font-bold text-blue-900">Accurate. Reliable. Fast.</h2>
+      <p class="mt-4 text-lg">Your trusted diagnostic partner in the Pacific.</p>
+      <a href="appointment.html" class="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-800">
+        Book Appointment
+      </a>
+    </section>
 
-  <!-- About -->
-  <section class="container mx-auto py-12 px-6">
-    <h3 class="text-2xl font-semibold text-blue-900 mb-4">About Us</h3>
-    <p class="text-gray-700 leading-relaxed">
-      Pacific Laboratory Specialist provides world-class diagnostic services with
-      cutting-edge technology, ensuring accurate results and patient-centered care.
-    </p>
-  </section>
+    <!-- About -->
+    <section class="container mx-auto py-12 px-6">
+      <h3 class="text-2xl font-semibold text-blue-900 mb-4">About Us</h3>
+      <p class="text-gray-700 leading-relaxed">
+        Pacific Laboratory Specialist provides world-class diagnostic services with
+        cutting-edge technology, ensuring accurate results and patient-centered care.
+      </p>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-center py-6">
+  <footer class="bg-blue-900 text-white text-center py-6 mt-auto">
     <p>&copy; 2025 Pacific Laboratory Specialist. All rights reserved.</p>
   </footer>
 
